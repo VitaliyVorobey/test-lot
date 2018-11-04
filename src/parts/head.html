@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test.biz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/icons/manifest.json">
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+    <meta name="application-name" content="Test">
+    <meta name="msapplication-TileColor" content="#101b31">
+    <meta name="msapplication-TileImage" content="/assets/img/icons/ms-icon-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/assets/img/icons/apple-icon-72x72.png">
+    <meta name="msapplication-square150x150logo" content="/assets/img/icons/apple-icon-152x152.png">
+    <meta name="msapplication-wide310x150logo" content="/assets/img/icons/apple-icon-180x180.png">
+    <meta name="msapplication-square310x310logo" content="/assets/img/icons/android-icon-192x192.png">
+    <meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#101b31">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- smoosh -->
+    <link href="/assets/css/first.css" rel="stylesheet" type="text/css">
+    <!-- endsmoosh -->
+
+    <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+    </noscript>
+    <script>
+        if (navigator.userAgent.toLocaleLowerCase().indexOf('chrome') > -1) {
+
+        } else {
+            !function (t) {
+                "use strict";
+                t.loadCSS || (t.loadCSS = function () {
+                });
+                var e = loadCSS.relpreload = {};
+                if (e.support = function () {
+                        var e;
+                        try {
+                            e = t.document.createElement("link").relList.supports("preload")
+                        } catch (t) {
+                            e = !1
+                        }
+                        return function () {
+                            return e
+                        }
+                    }(), e.bindMediaToggle = function (t) {
+                        var e = t.media || "all";
+
+                        function a() {
+                            t.media = e
+                        }
+
+                        t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function () {
+                            t.rel = "stylesheet", t.media = "only x"
+                        }), setTimeout(a, 3e3)
+                    }, e.poly = function () {
+                        if (!e.support()) for (var a = t.document.getElementsByTagName("link"),
+                                                   n = 0; n < a.length; n++) {
+                            var o = a[n];
+                            "preload" !== o.rel || "style" !== o.getAttribute("as") || o.getAttribute("data-loadcss") || (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o))
+                        }
+                    }, !e.support()) {
+                    e.poly();
+                    var a = t.setInterval(e.poly, 500);
+                    t.addEventListener ? t.addEventListener("load", function () {
+                        e.poly(), t.clearInterval(a)
+                    }) : t.attachEvent && t.attachEvent("onload", function () {
+                            e.poly(), t.clearInterval(a)
+                        })
+                }
+                "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS
+            }("undefined" != typeof global ? global : this);
+        }
+
+
+    </script>
+
+</head>
+<body>
+
